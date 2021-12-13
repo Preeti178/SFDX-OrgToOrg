@@ -30,6 +30,7 @@ node {
             }else{
 		    //rc = bat returnStatus: true, script: "sfdx force:auth:web:login --setalias ${HUB_ORG}"
 		    rc = bat returnStatus: true, script: "sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --jwtkeyfile \"${jwt_key_file}\" --username ${HUB_ORG} --instanceurl ${SFDC_HOST} --setdefaultdevhubusername"
+		     rc = bat returnStatus: true, script: "sfdx force:auth:jwt:grant --clientid 3MVG9fe4g9fhX0E5e5ai_y14f3qy_xKX3Ygo0Q_mVcVIXL9h2Mko14RYM_vMDmnRISsg.ZmxHYhyLlg52Qo1f --jwtkeyfile \"${jwt_key_file}\" --username preeti.singh@resourceful-goat-f1rgxl.com --instanceurl ${SFDC_HOST} --setdefaultdevhubusername"
             }
             if (rc != 0) { error 'hub org authorization failed' }
 
