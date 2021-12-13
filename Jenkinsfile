@@ -44,7 +44,7 @@ node {
 				//rmsg = bat returnStdout: true, script: "sfdx force:data:soql:query -u ${HUB_ORG} --query 'Select id from Account Limit 5'"
 			}
 			  
-            printf rmsgSFDX-OrgToOrg/
+          
             println('Hello from a Job DSL script!')
             println(rmsg)
         }
