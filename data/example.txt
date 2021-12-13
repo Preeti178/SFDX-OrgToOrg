@@ -1,1 +1,1 @@
-Select id, Name from Contact;
+Select id from Contact;
