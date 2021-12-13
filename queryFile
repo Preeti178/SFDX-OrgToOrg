@@ -1,1 +1,1 @@
-select id from Contact
+"select id from Contact"
