@@ -40,7 +40,7 @@ node {
 				rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
 				
-			   rmsg = bat returnStdout: true, script: "sfdx force:data:tree:export -q "SELECT Id,Name FROM Account LIMIT 2" -d ./data -p -u ${HUB_ORG}"
+			   rmsg = bat returnStdout: true, script: "sfdx force:data:tree:export -q data/. -d ./outputData -p -u ${HUB_ORG}"
 			}
 			  
             printf rmsg
