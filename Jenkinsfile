@@ -40,7 +40,7 @@ node {
 				rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
 				
-			   rmsg = bat returnStdout: true, script: "sfdx force:data:tree:export -q SFDX-OrgToOrg/queryFile -d ./outputData -p -u ${HUB_ORG}"
+			   rmsg = bat returnStdout: true, script: "sfdx force:data:tree:export -q 'SFDX-OrgToOrg/queryFile' -d ./outputData  -u ${HUB_ORG}"
 				//rmsg = bat returnStdout: true, script: "sfdx force:data:soql:query -u ${HUB_ORG} --query 'Select id from Account Limit 5'"
 			}
 			  
