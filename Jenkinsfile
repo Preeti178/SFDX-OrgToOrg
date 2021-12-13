@@ -41,12 +41,15 @@ node {
 			}else{
 				
 			   rmsg = bat returnStdout: true, script: "sfdx force:data:tree:export -q queryFile -d ./outputData  -u ${HUB_ORG}"
+			rmsg1 = bat returnStdout: true, script:"sfdx force:data:tree:import -p outputData/Contact.json -u preeti.singh@resourceful-goat-f1rgxl.com"
 				//rmsg = bat returnStdout: true, script: "sfdx force:data:soql:query -u ${HUB_ORG} --query 'Select id from Account Limit 5'"
+				
 			}
 			  
           
             println('Hello from a Job DSL script!')
             println(rmsg)
+		println(rmsg1)
         }
     }
 }
