@@ -1,1 +1,0 @@
-Select id, Name from Contact;
