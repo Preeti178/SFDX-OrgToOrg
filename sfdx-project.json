@@ -5,7 +5,6 @@
       "default": true
     }
   ],
-  "name": "SFDX-project",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "52.0"
